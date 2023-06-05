@@ -1,5 +1,7 @@
 # Current Time in Moscow
 
+![Python CI](https://github.com/haraphat01/moscow_time/workflows/Python%20CI/badge.svg)
+
 ## Overview
 This is a simple Python web application that displays the current time in Moscow. It uses the Flask web framework and the datetime module to get the current time in the Europe/Moscow timezone. The time is displayed in a user-friendly format on a web page.
 

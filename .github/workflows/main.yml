@@ -19,6 +19,13 @@ jobs:
       run: pip install --upgrade Flask
     - name: Run unit tests
       run: python3 test_main.py
+    - name: Cache dependencies
+      uses: actions/cache@v2
+      with:
+        path: ~/.cache/pip
+        key: ${{ runner.os }}-pip-${{ hashFiles('requirements.txt') }}
+        restore-keys: |
+          ${{ runner.os }}-pip-
   deploy:
     needs: build_test
     runs-on: ubuntu-latest
