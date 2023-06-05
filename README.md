@@ -24,4 +24,14 @@ If the tests pass successfully, you should see output similar to the following:
 
 Ran 1 test in 0.001s
 
-OK# moscow_time
+OK
+
+## Git Actions CI
+
+I have set up a continuous integration (CI) workflow using Git Actions to build and test our Python web application. The workflow has three steps: installing dependencies, running linters, and running unit tests.
+
+To run the workflow, push changes to the `main` branch of the repository. The workflow will automatically be triggered and the steps will be run in order. Make sure that you have all the necessary dependencies installed, including Flask and any other modules that your application depends on.
+
+I have also added Docker-related steps to our workflow to log in to a Docker registry, build a Docker image, and push the image to the registry. To use these steps, you will need to set up the `DOCKER_USERNAME` and `DOCKER_PASSWORD` secrets in your repository settings.
+
+By following these best practices and including a Git Actions CI workflow in your project, I can ensure that my application is thoroughly tested and working as expected.
