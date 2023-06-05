@@ -15,8 +15,6 @@ jobs:
         python-version: '3.10.7'
     - name: Install dependencies
       run: pip install -r requirements.txt
-    - name: Upgrade Flask and Werkzeug
-      run: pip install --upgrade Flask Werkzeug
     - name: Run unit tests
       run: python3 test_main.py
   # deploy:
