@@ -12,8 +12,6 @@ To use the application, open a web browser and navigate to http://localhost:5000
 
 ## Unit tests
 
-## Unit tests
-
 I have written unit tests for the Python web application that displays the current time in Moscow. These tests ensure that the application is working as expected and help us catch any bugs early in the development process.
 
 To run the unit tests, navigate to the directory where the `test_main.py` file is located and run the following command:
